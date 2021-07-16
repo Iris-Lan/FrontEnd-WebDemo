@@ -5,9 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link  href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"  rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./resource/WOW-master/css/libs/animate.css">
 </head>
-<link  href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"  rel="stylesheet" />
-<link rel="stylesheet" href="css/style.css">
 <body>
     
 
@@ -54,7 +56,7 @@
                   <a class="nav-link" aria-current="page" href="#">Sign Up</a>
                 </li>
                 <li class="nav-item" >
-                  <a class="nav-link" href="#">Login In</a>
+                  <a class="nav-link" href="#offcanvasExample"  data-bs-toggle="offcanvas"> <i class="fas fa-baby-carriage"></i> </a>
                 </li>
               </ul>
           </div>
@@ -65,7 +67,7 @@
 
     <!-- Menu Start-->
       <div class="main d-flex justify-content-center  align-items-center">
-        <div class="focus text-center text-white container  ">
+        <div class="focus text-center text-white container wow bounceInLeft ">
 
             <!-- h1 -->
 
@@ -89,14 +91,18 @@
                 <div class="col-10 mx-auto">
                     <form>
                         <div class="mb-3">
-                          <label for="exampleInputEmail1" class="form-label">Email address</label>
-                          <input type="email" class="form-control" id="exampleInputEmail1">                          
+                          <label for="user-email"  class="form-label">Email address</label>
+                          <input type="email" class="form-control" id="user-email">                          
                         </div>
                         <div class="mb-3">
-                          <label for="exampleInputPassword1" class="form-label">Password</label>
-                          <input type="password" class="form-control" id="exampleInputPassword1">
+                          <label for="user-pw" class="form-label">Password</label>
+                          <input type="password" class="form-control" id="user-pw">
                         </div>
-                        <button type="submit" class="btn btn-primary w-100">Get Your Job Today!!</button>
+
+                        <button type="button" id="submit" class="btn btn-primary w-100" ><i class="fas fa-bolt"></i> Get Your Job Today!! <i class="fas fa-bolt"></i></button>
+
+                        <!-- data-attributes的方式，也可用js的方式，如上 -->
+                        <!-- <button type="button" data-bs-toggle="modal" data-bs-target="#message" class="btn btn-primary w-100" ><i class="fas fa-bolt"></i> Get Your Job Today!! <i class="fas fa-bolt"></i></button> -->
                       </form>
                 </div>
             </div>
@@ -147,11 +153,11 @@
     
     <!-- Jobs Start-->
         <div class="jobs">
-            <div class="container">
+            <div class="container  wow bounceInUp">
                 <div class="row">
 
                     <!-- 第一列 -->
-                    <div class="col-3 mt-3">
+                    <div class="col-12 col-sm-6 col-md-3 mt-3">
                         <div class="card">
                           <img src="./img/jobs/allef-vinicius-178362.jpg" class="card-img-top" alt="...">
                           <div class="card-body">
@@ -161,7 +167,7 @@
                           </div>
                         </div>
                     </div>
-                    <div class="col-3 mt-3">
+                    <div class="col-12 col-sm-6 col-md-3 mt-3">
                         <div class="card">
                           <img src="./img/jobs/climate-kic-350836.jpg" class="card-img-top" alt="...">
                           <div class="card-body">
@@ -171,7 +177,7 @@
                           </div>
                         </div>
                     </div>
-                    <div class="col-3 mt-3">
+                    <div class="col-12 col-sm-6 col-md-3 mt-3">
                         <div class="card">
                           <img src="./img/jobs/emile-perron-190221.jpg" class="card-img-top" alt="...">
                           <div class="card-body">
@@ -181,7 +187,7 @@
                           </div>
                         </div>
                     </div>
-                    <div class="col-3 mt-3">
+                    <div class="col-12 col-sm-6 col-md-3 mt-3">
                         <div class="card">
                           <img src="./img/jobs/guilherme-cunha-222318.jpg" class="card-img-top" alt="...">
                           <div class="card-body">
@@ -193,7 +199,7 @@
                     </div>
 
                     <!-- 第二列 -->
-                    <div class="col-3 mt-3">
+                    <div class="col-12 col-sm-6 col-md-3 mt-3">
                         <div class="card">
                           <img src="./img/jobs/igor-ovsyannykov-252347.jpg" class="card-img-top" alt="...">
                           <div class="card-body">
@@ -203,7 +209,7 @@
                           </div>
                         </div>
                     </div>
-                    <div class="col-3 mt-3">
+                    <div class="col-12 col-sm-6 col-md-3 mt-3">
                         <div class="card">
                           <img src="./img/jobs/ilya-pavlov-87472.jpg" class="card-img-top" alt="...">
                           <div class="card-body">
@@ -213,7 +219,7 @@
                           </div>
                         </div>
                     </div>
-                    <div class="col-3 mt-3">
+                    <div class="col-12 col-sm-6 col-md-3 mt-3">
                         <div class="card">
                           <img src="./img/jobs/josefa-ndiaz-312261.jpg" class="card-img-top" alt="...">
                           <div class="card-body">
@@ -223,7 +229,7 @@
                           </div>
                         </div>
                     </div>
-                    <div class="col-3 mt-3">
+                    <div class="col-12 col-sm-6 col-md-3 mt-3">
                         <div class="card">
                           <img src="./img/jobs/rawpixel-com-267075.jpg" class="card-img-top" alt="...">
                           <div class="card-body">
@@ -263,6 +269,92 @@
         </div>
     <!-- Copyright End-->
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Modal -->
+        <div class="modal fade" id="message" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div id="modal-message"></div>            
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+            </div>
+        </div>
+
+    <!-- offcanvas -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <div>
+            Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+          </div>
+          <div class="dropdown mt-3">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
+              Dropdown button
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>   
+    <script src="./resource/WOW-master/dist/wow.min.js"></script>
+    
+    
+    <script>
+
+        new WOW().init();
+
+        const messageDom = document.getElementById('message');
+        const modal = new bootstrap.Modal(messageDom, {
+            keyboard: false
+        });
+        
+        const modalMessage = document.getElementById('modal-message');  
+        const submitBtn = document.getElementById('submit');
+        submitBtn.addEventListener('click', function(){
+            const emailVal = document.getElementById('user-email').value;
+            const pwVal = document.getElementById('user-pw').value;
+            // console.log(emailVal, pwVal);
+            if(!emailVal ||  !pwVal){
+                modalMessage.innerHTML = 'please fill email and password!';
+            }
+            modal.show();
+
+            setTimeout(function(){
+                // console.log('wow');
+            modal.hide();
+            }, 2000);
+
+        });
+
+
+        messageDom.addEventListener('hidden.bs.modal', function (event) {
+            resetMessage();
+        })
+
+
+        function resetMessage(){
+            modalMessage.innerHTML = "";
+        }
+        
+
+    </script>
 </body>
 </html>
