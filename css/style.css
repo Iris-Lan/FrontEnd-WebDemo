@@ -1,0 +1,20 @@
+.main{
+    height: 90vh;
+    background: url('../img/background/confortableDesk.jpg');
+    background-size: cover;
+    background-position: center;
+
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+.focus{
+    height: 400px;
+    width: 400px;
+}
+
+
+.focus h1{
+    font-size: 80px;
+}
