@@ -18,3 +18,10 @@
 .focus h1{
     font-size: 80px;
 }
+
+.jobs{
+    padding: 20px 0;
+    background: url('../img/background/bethany-legg-9248.jpg');
+    background-size: cover;
+    background-position: center;
+}
